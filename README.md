@@ -1,7 +1,5 @@
 ## Presentation
 
-### Presentation Power Video
-
 ### Presentation Power Point
 
 https://o365coloradoedu-my.sharepoint.com/:p:/g/personal/eiue6866_colorado_edu/EUBRdDg46vRFgqnp9h--MaMB5aDQBTNII862sLkkuBaJKA?e=7gbWbm
@@ -26,19 +24,23 @@ https://docs.google.com/spreadsheets/d/1jk84Sn4sn6ghJS6IH5rgnMM4WV4KJmr_t9FFO5fv
 
 ## Test Script
 
+```bash
 git clone https://github.com/redhat-intel-ai-hackathon-raft-rag/rag.git
 git clone https://github.com/redhat-intel-ai-hackathon-raft-rag/finetuning.git
 git clone https://github.com/redhat-intel-ai-hackathon-raft-rag/data-processing.git
 git clone https://github.com/redhat-intel-ai-hackathon-raft-rag/infra
 git clone https://github.com/redhat-intel-ai-hackathon-raft-rag/raft-inference.git
+```
 
 ### Prepared models and dataset
 
+```bash
 cd rag
+```
 
 #### download dataset and model
 
-```
+```bash
 pip install -r requirements.txt
 ./download_dataset_book.sh
 ./download_dataset_web.sh
@@ -47,34 +49,46 @@ pip install -r requirements.txt
 
 #### run inference server
 
+```bash
 python -m app
+```
 
 ### full pipeline
 
 #### dataset
 
+```bash
 cd raft-inference
+```
 
 and follow README.md
 
+```bash
 cd dataset
+```
 
 and follow README.md
 
 #### train
 
+```bash
 cd finetuning
+```
 
 and follow README.md
 
 #### infra
 
+```bash
 cd infra
+```
 
 and follow README.md
 
 #### inference
 
+```bash
 cd rag
+```
 
 and follow README.md
